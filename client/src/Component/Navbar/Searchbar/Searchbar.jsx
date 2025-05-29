@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BsMicFill } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";
 import Searchlist from './Searchlist';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './Searchbar.css';
 

@@ -150,7 +150,7 @@
 // }
 
 // export default Navbar
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import logo from "./logo.ico";
 import "./Navbar.css";
 import { useDispatch, useSelector } from 'react-redux';
