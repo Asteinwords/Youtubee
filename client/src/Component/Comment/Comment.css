@@ -1,0 +1,119 @@
+/* Container form */
+.comments_sub_form_comments {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 1rem auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* Input box */
+.comment_ibox {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #666;
+  color: #eee;
+  font-size: 1rem;
+  border-radius: 4px 4px 0 0;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.comment_ibox::placeholder {
+  color: #bbb;
+}
+
+.comment_ibox:focus {
+  outline: none;
+  border-color: #2c55d1;
+  background-color: rgba(44, 85, 209, 0.1);
+  color: #fff;
+}
+
+/* Submit button */
+.comment_add_btn_comments {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #404040;
+  color: #f0f8ff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  width: 100px;
+  transition: all 0.3s ease;
+}
+
+.comment_add_btn_comments:hover,
+.comment_add_btn_comments:focus {
+  background-color: rgba(240, 248, 255, 0.1);
+  border-color: #2c55d1;
+  color: #2c55d1;
+  outline: none;
+}
+
+/* Comments container */
+.display_comment_container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(44, 85, 209, 0.3);
+}
+
+/* Single comment text */
+.comment_body {
+  color: #c5c5c5;
+  margin: 0 0 0.3rem 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* User name and time */
+.usercommented {
+  color: #999;
+  margin: 0 0 1rem 0;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+/* Edit/Delete container */
+.EditDel_DisplayCommendt {
+  margin-bottom: 1rem;
+  color: rgba(44, 85, 209, 0.8);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.EditDel_DisplayCommendt i {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.EditDel_DisplayCommendt i:hover {
+  background-color: rgba(44, 85, 209, 0.2);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .comments_sub_form_comments {
+    flex-direction: column;
+    width: 90%;
+  }
+  .comment_add_btn_comments {
+    width: 100%;
+  }
+  .display_comment_container {
+    width: 90%;
+  }
+}

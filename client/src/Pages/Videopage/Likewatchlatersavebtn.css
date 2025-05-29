@@ -1,0 +1,68 @@
+.btns_cont_videoPage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  gap: 0.5rem;
+}
+
+.btn_VideoPage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.like_videoPage {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.like_videoPage:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btns_videoPage {
+  margin-right: 0.4rem;
+}
+
+.like_videoPage b {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .btns_cont_videoPage {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .btn_VideoPage {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .like_videoPage {
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .like_videoPage {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .btns_videoPage {
+    margin-right: 0.3rem;
+  }
+}

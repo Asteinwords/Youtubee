@@ -1,0 +1,98 @@
+.Auth_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.Auth_container2 {
+  margin-top: 4rem;
+  margin-right: 2rem;
+  padding: 1rem 1.2rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+}
+
+.User_Details {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Chanel_logo_App {
+  width: 40px;
+  height: 40px;
+  background-color: #3a3a3a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+.email_auth {
+  font-size: 1rem;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.btns_Auth {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn_Auth {
+  color: #f1f1f1;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn_Auth:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 480px) {
+  .Auth_container2 {
+    margin-top: 3rem;
+    margin-right: 1rem;
+    min-width: 90%;
+    padding: 0.8rem;
+  }
+
+  .email_auth {
+    font-size: 0.95rem;
+  }
+
+  .btn_Auth {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+  }
+}

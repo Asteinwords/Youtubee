@@ -1,0 +1,128 @@
+.navbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181818;
+    padding: 0.75rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .burger p {
+    width: 1.2rem;
+    height: 2px;
+    background-color: #fff;
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    height: 28px;
+  }
+  
+  .logo-text {
+    margin-left: 0.3rem;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
+  .icon {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .apps-box {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .app-box {
+    border: 1px solid white;
+    width: 2px;
+    height: 2px;
+    margin: 1px;
+  }
+  
+  .plans-link {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 4px 12px;
+    transition: color 0.2s ease;
+  }
+  
+  .plans-link:hover {
+    color: #f87171;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .auth-btn {
+    color: white;
+    background-color: #272727;
+    border: 1px solid #3ea6ff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .auth-btn:hover {
+    background-color: #3ea6ff;
+    color: black;
+  }
+  
+  .avatar {
+    background-color: #3ea6ff;
+    color: black;
+    padding: 0.4rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .avatar-char {
+    font-size: 1rem;
+  }
+  

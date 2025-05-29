@@ -1,0 +1,145 @@
+/* Fix typo from conatiner_whl to container_whl */
+.container_whl {
+  margin: 0;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: white;
+}
+
+/* Left box container */
+.box_WHL {
+  width: 45%;
+  min-width: 280px;
+  padding: 1rem;
+  margin: 0.8rem 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(44, 85, 209, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.box_WHL b {
+  font-size: 2.5rem;
+  color: #2c55d1;
+  user-select: none;
+}
+
+/* Clear History button */
+.clear_History_btn {
+  color: #999;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.3rem 0.6rem;
+  border: 1.5px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.clear_History_btn:hover,
+.clear_History_btn:focus {
+  color: #2c55d1;
+  border-color: #2c55d1;
+  outline: none;
+  background-color: rgba(44, 85, 209, 0.15);
+}
+
+/* Right side container */
+.rightSide_whl {
+  width: 50%;
+  min-width: 320px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44, 85, 209, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rightSide_whl h1 {
+  text-decoration: underline;
+  color: #2c55d1;
+  user-select: none;
+  margin: 0 0 1rem 0;
+}
+
+/* Scrollable video list */
+.whl_list {
+  overflow-y: auto;
+  max-height: 60vh;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #2c55d1 transparent;
+}
+
+/* Webkit scrollbar for better visuals */
+.whl_list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.whl_list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.whl_list::-webkit-scrollbar-thumb {
+  background-color: #2c55d1;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+/* Container for entire page to handle layout */
+.container_Pages_App {
+  display: flex;
+  flex-direction: row;
+  min-height: 80vh;
+  background-color: #121212;
+  color: white;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* Inner container for page content next to sidebar */
+.container2_Pages_App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Left sidebar styles (assuming sidebar width ~200px) */
+.Leftsidebar {
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container_Pages_App {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .container_whl {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box_WHL,
+  .rightSide_whl {
+    width: 100%;
+    min-width: auto;
+    margin: 0.5rem 0;
+  }
+
+  .whl_list {
+    max-height: 40vh;
+  }
+}

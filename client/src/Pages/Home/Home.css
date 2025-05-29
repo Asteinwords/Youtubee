@@ -1,0 +1,44 @@
+.navigation_Home {
+    color: white;
+    background-color: rgb(37, 37, 37);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    overflow-x: auto;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.27);
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  
+  /* Style each category button */
+  .btn_nav_home {
+    background-color: rgb(46, 46, 46);
+    padding: 0.5rem 1rem;
+    border-radius: 45px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn_nav_home:hover {
+    background-color: rgb(128, 128, 128);
+  }
+  
+  /* Responsive tweaks for tablets */
+  @media (max-width: 768px) {
+    .btn_nav_home {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  /* Responsive tweaks for mobile phones */
+  @media (max-width: 480px) {
+    .btn_nav_home {
+      font-size: 0.75rem;
+      padding: 0.35rem 0.7rem;
+    }
+  }
+  
